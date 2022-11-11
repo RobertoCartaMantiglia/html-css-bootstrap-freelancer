@@ -5,9 +5,16 @@ body{
 header{
     background-color: #1abc9c;
 }
-.about{
-    background-color: #1abc9c;
-}
+
 .sede-legale{
     color: white;
+}
+#about-you{
+    background-color: #1abc9c;
+}
+#footer-upper{
+    background-color: #3a546d;
+}
+#footer-bottom{
+    background-color: #2c3e50;
 }
