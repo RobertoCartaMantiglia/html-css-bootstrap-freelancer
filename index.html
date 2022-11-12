@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet"> 
 <!-- style  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>bootstrap</title>
 </head>
@@ -22,7 +23,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-dark">
+        <nav class="navbar navbar-dark mb-4">
             <div class="container">
               <a class="navbar-brand text-uppercase" href="#">start bootstrap</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" >
@@ -42,12 +43,15 @@
                     <div class="col-12 text-center">
                       <div class="row justify-content-center">
                         <div class="col-12 col-md-8 col-lg-6">
-                            <div class="p-2 mt-5">
+                            <div class="p-2">
                                 <img src="./img/avatar.svg" class="img-fluid" style="width: 60%;" alt="avatar">
                             </div>
                             <div>
-                                <h1 class="text-uppercase fs-1">START BOOTSTRAP</h1>
-                                <p class="text-uppercase">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTARTOR</p>
+                                <h1 class="text-uppercase fs-1 pt-2">START BOOTSTRAP</h1>
+                                <div class="mb-3">
+                                    <i class="fa-solid fa-star fs-1 p-3"></i>
+                                </div>
+                                <p class="text-uppercase mb-5">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTARTOR</p>
                             </div>
                         </div>                    
                       </div>  
@@ -62,6 +66,12 @@
         <section>
             <div class="container">
                 <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="text-uppercase fs-1">portfolio</h2>
+                        <div class="mb-3">
+                            <i class="fa-solid fa-star fs-2 p-3"></i>
+                        </div>
+                    </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card mb-3">
                             <img src="./img/cabin.png" alt="cabin">
@@ -103,17 +113,20 @@
             <div class="container">
                 <div class="row justify-content-center mb-5 about">
                     <div class="col-12 ">
-                        <div class="text-center m-5">                   
-                            <h2>ABOUT YOU</h2>
-                        </div>
+                        <div class="text-center pt-5">                   
+                            <h2>ABOUT</h2>
+                            <div class="mb-3">
+                                <i class="fa-solid fa-star fs-1 p-3"></i>
+                            </div>
+                        </div>                        
                     </div>
-                    <div class="col-10 col-md-5">
+                    <div class="col-9 col-md-5">
                         <div>                   
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quod corrupti quaerat, enim ad dolore molestiae minus voluptate quo aliquam alias consequuntur debitis beatae, blanditiis pariatur eum sunt voluptates eveniet!
                             Architecto provident ea incidunt non natus. Soluta, perferendis quaerat quia, nostrum ab quo adipisci, debitis libero odio aut a. Consectetur veniam sed iste magni aspernatur pariatur dolore. Quo, iure repellat.
                         </div>
                     </div>
-                    <div class="col-10 col-md-5 mb-3">
+                    <div class="col-9 col-md-5 mb-3">
                         <div>                   
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quod corrupti quaerat, enim ad dolore molestiae minus voluptate quo aliquam alias consequuntur debitis beatae, blanditiis pariatur eum sunt voluptates eveniet!
                             Architecto provident ea incidunt non natus. Soluta, perferendis quaerat quia, nostrum ab quo adipisci, debitis libero odio aut a. Consectetur veniam sed iste magni aspernatur pariatur dolore. Quo, iure repellat.
@@ -129,7 +142,7 @@
         <section>
             <div class="container">
                 <div class="row justify-content-center mb-4">
-                    <div class="col-12">
+                    <div class="col-12 mb-4">
                         <div class="text-center">
                             <h2 class="text-uppercase">contact me</h2>
                         </div>
@@ -137,21 +150,21 @@
                     <div class="col-8">
                         <div>
                             <form>
-                                <div class="mb-3 border-bottom-1">
-                                    <label for="exampleInputName" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="exampleInputName">
-                                  </div>
-                                <div class="mb-3">
-                                  <label for="exampleInputEmail1" class="form-label">Email Address</label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div class="mb-2 border-bottom">
+                                    <label for="exampleName" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="exampleName">
                                 </div>
-                                <div class="mb-3">
-                                  <label for="exampleInputNumber" class="form-label">Phone Number</label>
+                                <div class="mb-2 border-bottom">
+                                  <label for="exampleEmail" class="form-label">Email Address</label>
+                                  <input type="email" class="form-control" id="exampleEmail">
+                                </div>
+                                <div class="mb-2 border-bottom">
+                                  <label for="exampleNumber" class="form-label">Phone Number</label>
                                   <input type="number" class="form-control">
                                 </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">Message</label>
-                                    <input type="text" class="form-control" id="exampleInputNumber">
+                                <div class="mb-2 pb-5 border-bottom">
+                                    <label for="examplePassword" class="form-label">Message</label>
+                                    <input type="text" class="form-control" id="exampleNumber">
                                 </div>
                                 <button type="submit" class="bottone">Send</button>
                               </form>
@@ -165,20 +178,36 @@
     <footer class="text-white">
         <section id="footer-upper">
             <div class="container">
-                <div class="row"> 
-                    <div class="col-12 col-md-4 p-5">
+                <div class="row justify-content-center"> 
+                    <div class="col-12 col-md-4 mb-4">
                         <div class="text-center">
-                            <p class="text-uppercase">Lorem, ipsum dolor.</p>
+                            <h3 class="text-uppercase fs-5 pt-4">Location</h3>
+                            <p>John Daniel Drive Clark MO, 52432</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 p-5">
+                    <div class="col-12 col-md-4 mb-4">
                         <div class="text-center">
-                            <p>Lorem, ipsum dolor.</p>
+                            <h3 class="text-uppercase fs-5 pt-2 pt-md-4">around the web</h3>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-2 col-md-3 text-center">
+                                <i class="fa-brands fa-facebook-f fs-3"></i>
+                            </div>
+                            <div class="col-2 col-md-3 text-center">
+                                <i class="fa-brands fa-google-plus-g fs-3"></i>
+                            </div>
+                            <div class="col-2 col-md-3 text-center">
+                                <i class="fa-brands fa-twitter fs-3"></i>
+                            </div>
+                            <div class="col-2 col-md-3 text-center">
+                                <i class="fa-brands fa-linkedin-in fs-3"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 p-5">
+                    <div class="col-12 col-md-4 mb-4">
                         <div class="text-center">
-                            <p class="text-uppercase">Lorem, ipsum dolor.</p>
+                            <h3 class="text-uppercase fs-5 pt-2 pt-md-4">about freelancer</h3>
+                            <p>Freelance is a free to use, open source Bootstap theme created by Start Bootstratp</p>
                         </div>
                     </div>            
                 </div>
@@ -188,9 +217,9 @@
         <section id="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 p-4">
+                    <div class="col-12 justify-content-around">
                         <div class="text-center">
-                            <h4>Copyright</h4>
+                            <p class="fs-6 p-3">Copyright your website 2022</p>
                         </div>
                     </div>
                 </div>
